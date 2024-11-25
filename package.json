@@ -12,6 +12,7 @@
     "@vueuse/core": "^11.3.0",
     "@vueuse/motion": "^2.2.6",
     "lucide-vue": "^0.460.0",
+    "lucide-vue-next": "^0.460.0",
     "primevue": "^4.2.3",
     "tailwindcss-primeui": "^0.3.4",
     "vue": "^3.5.12",
