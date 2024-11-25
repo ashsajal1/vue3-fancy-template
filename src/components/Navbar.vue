@@ -1,5 +1,5 @@
 <template>
-    <nav class="flex items-center justify-between p-4 bg-primary-200">
+    <nav class="flex items-center justify-between p-4">
         <p>Logo</p>
 
         <div class="flex items-center justify-between">
