@@ -1,5 +1,5 @@
 <template>
-  <div class="dark:bg-surface-900 dark:text-muted-color">
+  <div class="dark:bg-surface-900 dark:text-surface-200">
     <Navbar />
     <nav>
       <RouterLink to="/">Go to Home</RouterLink>
