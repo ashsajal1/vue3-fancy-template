@@ -73,3 +73,19 @@
       --p-text-hover-muted-color: var(--p-surface-300);
   }
 }
+
+/* Contrast Theme */
+:root.contrast {
+  --p-primary-color: #ffcc00;
+  --p-background-color: #000000;
+  --p-text-color: #ffffff;
+  --p-accent-color: #e63946;
+}
+
+/* Cafe Theme */
+:root.cafe {
+  --p-primary-color: #a67b5b;
+  --p-background-color: #4b2e2e;
+  --p-text-color: #f0e6d2;
+  --p-accent-color: #8c4d36;
+}
