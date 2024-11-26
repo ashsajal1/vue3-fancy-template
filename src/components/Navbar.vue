@@ -1,13 +1,16 @@
 <template>
     <nav class="flex items-center justify-between p-4">
-        <p>Logo</p>
+        <RouterLink to="/" class="text-2xl font-bold select-none cursor-pointer">Logo</RouterLink>
 
-        <div class="flex items-center justify-between">
-            <Button @click="next()">
+        <div class="flex items-center justify-between gap-2">
+            <Button variant="outlined" @click="next()">
                 <SunDim :size="20" v-if="mode === 'dark'" />
                 <Moon :size="20" v-if="mode === 'light'" />
                 <MonitorDot :size="20" v-if="mode === 'auto'" />{{ mode }}
             </Button>
+            <RouterLink to="/about">
+                <Button>About</Button>
+            </RouterLink>
         </div>
     </nav>
 </template>
