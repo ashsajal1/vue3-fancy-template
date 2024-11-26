@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate-pwa-assets": "pwa-assets-generator --preset minimal public/logo.png"
   },
   "dependencies": {
     "@vueuse/core": "^11.3.0",
@@ -20,6 +21,7 @@
     "vue3-fancy-template": "file:"
   },
   "devDependencies": {
+    "@vite-pwa/assets-generator": "^0.2.6",
     "@vitejs/plugin-vue": "^5.1.4",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.49",
@@ -27,6 +29,7 @@
     "tailwindcss": "^3.4.15",
     "typescript": "~5.6.2",
     "vite": "^5.4.10",
+    "vite-plugin-pwa": "^0.21.0",
     "vue-tsc": "^2.1.8"
   }
 }
