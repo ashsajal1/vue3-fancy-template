@@ -8,10 +8,10 @@ import PrimeVue from 'primevue/config';
 
 const app = createApp(App)
 
-app.use(MotionPlugin)
-app.use(router)
+app.use(router);
+app.use(MotionPlugin);
 app.use(PrimeVue, {
     theme: 'none'
 });
 
-app.mount('#app')
+app.mount('#app');
