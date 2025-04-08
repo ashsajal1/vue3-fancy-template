@@ -1,6 +1,7 @@
 import { createApp } from "vue";
 import "./assets/tailwind.css";
 import "./style.css";
+import 'primeicons/primeicons.css'
 import App from "./App.vue";
 import { router } from "./router";
 import { MotionPlugin } from "@vueuse/motion";

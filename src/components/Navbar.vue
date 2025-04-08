@@ -7,16 +7,18 @@
     >
 
     <div class="flex items-center justify-between gap-2">
-      <Button size="small" rounded variant="outlined" @click="next()">
-        <SunDim :size="20" v-if="mode === 'dark'" />
-        <Moon :size="20" v-if="mode === 'light'" />
-        <MonitorDot :size="16" v-if="mode === 'auto'" />{{ mode }}
+      <Button
+        :icon="state.value === 'dark' ? 'pi pi-sun' : 'pi pi-moon'"
+        rounded
+        variant="outlined"
+        @click="next()"
+      >
       </Button>
       <RouterLink to="/settings">
-        <Button size="small"><Settings stroke-width="1.5" :size="20" /></Button>
+        <Button icon="pi pi-cog" size="medium"></Button>
       </RouterLink>
       <RouterLink to="/about">
-        <Button size="small">About</Button>
+        <Button>About</Button>
       </RouterLink>
     </div>
   </nav>
@@ -36,7 +38,7 @@ const mode = useColorMode({
   },
 });
 
-const { state, next } = useCycleList(["dark", "light", "auto"] as const, {
+const { state, next } = useCycleList(["dark", "light"] as const, {
   initialValue: mode,
 });
 
