@@ -8,7 +8,7 @@
 
     <div class="flex items-center justify-between gap-2">
       <Button
-        :icon="state.value === 'dark' ? 'pi pi-sun' : 'pi pi-moon'"
+        :icon="themeIcon"
         rounded
         variant="secondary"
         severity="secondary"
@@ -28,7 +28,7 @@
 <script setup lang="ts">
 import { useColorMode, useCycleList } from "@vueuse/core";
 import { Button } from "primevue";
-import { watchEffect } from "vue";
+import { watchEffect, computed } from "vue";
 
 const mode = useColorMode({
   emitAuto: true,
@@ -43,4 +43,7 @@ const { state, next } = useCycleList(["dark", "light"] as const, {
 });
 
 watchEffect(() => (mode.value = state.value));
+const themeIcon = computed(() =>
+  state.value === "dark" ? "pi pi-sun" : "pi pi-moon"
+);
 </script>
