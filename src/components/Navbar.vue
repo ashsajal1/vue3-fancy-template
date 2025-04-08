@@ -10,7 +10,8 @@
       <Button
         :icon="state.value === 'dark' ? 'pi pi-sun' : 'pi pi-moon'"
         rounded
-        variant="outlined"
+        variant="secondary"
+        severity="secondary"
         @click="next()"
       >
       </Button>
