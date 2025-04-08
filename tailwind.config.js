@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const primeui = require('tailwindcss-primeui');
+import primeui from 'tailwindcss-primeui';
 
 export default {
   darkMode: 'selector',
@@ -10,5 +10,5 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [require('tailwindcss-primeui')],
+  plugins: [primeui],
 }
