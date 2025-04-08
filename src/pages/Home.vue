@@ -7,7 +7,7 @@
 </template>
 
 <script setup>
-import { useCounterStore } from "../stores/counter";
+import { useCounterStore } from "@/stores/counter";
 import { Button } from "primevue";
 
 const store = useCounterStore();

@@ -10,6 +10,7 @@
     "generate-pwa-assets": "pwa-assets-generator --preset minimal public/logo.png"
   },
   "dependencies": {
+    "@types/node": "^22.14.0",
     "@vueuse/core": "^11.3.0",
     "@vueuse/motion": "^2.2.6",
     "lucide-vue": "^0.460.0",
