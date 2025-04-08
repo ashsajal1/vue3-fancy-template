@@ -5,7 +5,11 @@ import AboutView from "./pages/About.vue";
 import NotFound from "./pages/NotFound.vue";
 
 const routes = [
-  { path: "/", component: HomeView },
+  {
+    path: "/",
+    meta: { title: "Home", description: "Welcome to our homepage." },
+    component: HomeView,
+  },
   {
     path: "/about",
     component: AboutView,
