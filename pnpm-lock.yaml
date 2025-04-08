@@ -23,6 +23,9 @@ importers:
       pinia:
         specifier: ^3.0.1
         version: 3.0.1(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3))
+      primeicons:
+        specifier: ^7.0.0
+        version: 7.0.0
       primevue:
         specifier: ^4.2.3
         version: 4.2.3(vue@3.5.13(typescript@5.6.3))
@@ -2176,6 +2179,9 @@ packages:
   pretty-bytes@6.1.1:
     resolution: {integrity: sha512-mQUvGU6aUFQ+rNvTIAcZuWGRT9a6f6Yrg9bHs4ImKF+HZCEK+plBvnAZYSIQztknZF2qnzNtr6F8s0+IuptdlQ==}
     engines: {node: ^14.13.1 || >=16.0.0}
+
+  primeicons@7.0.0:
+    resolution: {integrity: sha512-jK3Et9UzwzTsd6tzl2RmwrVY/b8raJ3QZLzoDACj+oTJ0oX7L9Hy+XnVwgo4QVKlKpnP/Ur13SXV/pVh4LzaDw==}
 
   primevue@4.2.3:
     resolution: {integrity: sha512-kAkSOHmyBhe0NNzjfmZSAFNlxAWPTuTjWvYSxSv2OLVdy61F+IPQAENygaB7UdB4wY7NNxeBVbphEgjuipwTww==}
@@ -5121,6 +5127,8 @@ snapshots:
 
   pretty-bytes@6.1.1: {}
 
+  primeicons@7.0.0: {}
+
   primevue@4.2.3(vue@3.5.13(typescript@5.6.3)):
     dependencies:
       '@primeuix/styled': 0.3.2
@@ -5780,6 +5788,7 @@ snapshots:
       '@vueuse/motion': 2.2.6(rollup@2.79.2)(vue@3.5.13(typescript@5.6.3))
       lucide-vue: 0.460.0(vue@3.5.13(typescript@5.6.3))
       lucide-vue-next: 0.460.0(vue@3.5.13(typescript@5.6.3))
+      pinia: 3.0.1(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3))
       primevue: 4.2.3(vue@3.5.13(typescript@5.6.3))
       tailwindcss-primeui: 0.3.4(tailwindcss@3.4.15)
       vue: 3.5.13(typescript@5.6.3)

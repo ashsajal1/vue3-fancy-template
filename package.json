@@ -15,6 +15,7 @@
     "lucide-vue": "^0.460.0",
     "lucide-vue-next": "^0.460.0",
     "pinia": "^3.0.1",
+    "primeicons": "^7.0.0",
     "primevue": "^4.2.3",
     "tailwindcss-primeui": "^0.3.4",
     "vue": "^3.5.12",
