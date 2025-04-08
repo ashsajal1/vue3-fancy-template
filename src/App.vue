@@ -1,9 +1,11 @@
 <template>
-  <Navbar />
-  <main class="p-2">
-    <RouterView />
-  </main>
-  <Footer />
+  <div class="flex flex-col min-h-screen">
+    <Navbar />
+    <main class="p-2 flex-grow">
+      <RouterView />
+    </main>
+    <Footer />
+  </div>
 </template>
 
 <script setup>
