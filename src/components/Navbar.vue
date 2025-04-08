@@ -28,7 +28,6 @@
 import { useColorMode, useCycleList } from "@vueuse/core";
 import { Button } from "primevue";
 import { watchEffect } from "vue";
-import { SunDim, Moon, MonitorDot, Settings, BookPlus } from "lucide-vue-next";
 
 const mode = useColorMode({
   emitAuto: true,
