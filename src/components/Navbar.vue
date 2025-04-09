@@ -44,6 +44,7 @@
           :icon="themeIcon"
           class="w-full"
           severity="secondary"
+          @click="next()"
         />
       </div>
     </template>
