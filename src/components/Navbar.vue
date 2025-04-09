@@ -10,13 +10,12 @@
       <Button
         :icon="themeIcon"
         rounded
-        variant="secondary"
         severity="secondary"
         @click="next()"
       >
       </Button>
       <RouterLink to="/settings">
-        <Button icon="pi pi-cog" size="medium"></Button>
+        <Button icon="pi pi-cog"></Button>
       </RouterLink>
       <RouterLink to="/about">
         <Button>About</Button>
