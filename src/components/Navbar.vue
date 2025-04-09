@@ -7,19 +7,16 @@
     >
 
     <div class="flex items-center justify-between gap-2">
-      <Button
-        :icon="themeIcon"
-        rounded
-        severity="secondary"
-        @click="next()"
-      >
+      <Button :icon="themeIcon" rounded severity="secondary" @click="next()">
       </Button>
-      <RouterLink to="/settings">
-        <Button icon="pi pi-cog"></Button>
-      </RouterLink>
-      <RouterLink to="/about">
-        <Button>About</Button>
-      </RouterLink>
+      <div class="hidden sm:flex items-center justify-between gap-2">
+        <RouterLink to="/settings">
+          <Button icon="pi pi-cog"></Button>
+        </RouterLink>
+        <RouterLink to="/about">
+          <Button>About</Button>
+        </RouterLink>
+      </div>
     </div>
   </nav>
 </template>
