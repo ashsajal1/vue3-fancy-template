@@ -13,6 +13,7 @@
     "@types/node": "^22.14.0",
     "@vueuse/core": "^11.3.0",
     "@vueuse/motion": "^2.2.6",
+    "axios": "^1.8.4",
     "lucide-vue": "^0.460.0",
     "lucide-vue-next": "^0.460.0",
     "pinia": "^3.0.1",
