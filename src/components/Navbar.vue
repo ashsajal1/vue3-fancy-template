@@ -30,21 +30,29 @@
       <RouterLink to="/">
         <Button label="Home" icon="pi pi-home" class="w-full" />
       </RouterLink>
-      <RouterLink to="/settings">
-        <Button icon="pi pi-cog" label="Settings" class="w-full" />
-      </RouterLink>
+
       <RouterLink to="/about">
         <Button label="About" class="w-full" />
       </RouterLink>
     </div>
     <template #footer>
-      <div class="flex items-center gap-2">
+      <div class="flex items-center mb-3 gap-2">
+        <RouterLink to="/settings">
+          <Button
+            icon="pi pi-cog"
+            label="Settings"
+            class="w-full"
+            outlined
+            severity="danger"
+          />
+        </RouterLink>
         <Button
           label="Toggle Theme"
           :icon="themeIcon"
           class="w-full"
           severity="secondary"
           @click="next()"
+          text
         />
       </div>
     </template>
