@@ -23,31 +23,28 @@
   <Drawer v-model:visible="isDrawerOpen">
     <template #header>
       <div class="flex items-center gap-2">
-        <Avatar image="/images/avatar/amyelsner.png" shape="circle" />
-        <span class="font-bold">Logo</span>
+        <RouterLink to="/"><span class="font-bold">Logo</span></RouterLink>
       </div>
     </template>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.
-    </p>
+    <div class="flex flex-col gap-2">
+      <RouterLink to="/">
+        <Button label="Home" icon="pi pi-home" class="w-full" />
+      </RouterLink>
+      <RouterLink to="/settings">
+        <Button icon="pi pi-cog" label="Settings" class="w-full" />
+      </RouterLink>
+      <RouterLink to="/about">
+        <Button label="About" class="w-full" />
+      </RouterLink>
+    </div>
     <template #footer>
       <div class="flex items-center gap-2">
         <Button
-          label="Account"
-          icon="pi pi-user"
-          class="flex-auto"
-          outlined
-        ></Button>
-        <Button
-          label="Logout"
-          icon="pi pi-sign-out"
-          class="flex-auto"
-          severity="danger"
-          text
-        ></Button>
+          label="Toggle Theme"
+          :icon="themeIcon"
+          class="w-full"
+          severity="secondary"
+        />
       </div>
     </template>
   </Drawer>
